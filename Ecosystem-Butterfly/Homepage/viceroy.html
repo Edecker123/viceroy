@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <title>Ecosystem-Butterfly</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href='topnav.css'>
+    
+</head>
+<body>
+<div class="navbar">
+    <div class="splanner" id="weekdiv">
+        <button class="wbutton" id="weekbtn" onclick="toggleClick()">Show Daily</button>
+        <div class='dropcontent' id="weekdivheader">
+            <div class="mbbox">
+                <p id='date'></p>
+                <script>
+                    var date= new Date();
+                    document.getElementById("date").innerHTML=date;
+                </script>
+                    <div id="mlistwrapper">
+                        <div class="addbox">
+                            <button id="add">+</button>
+                        </div>
+                    </div>
+            </div>
+            <script src="textboxd.js"></script>
+        </div>
+    </div>
+    <script src="wdrag.js"></script>
+    
+    <div class='div' id='divwc'></div>
+    <div class='calendarnav'>
+        <button class='cbtn'> Calendar</button>
+    </div>
+    <div class='div'></div>
+    <div class='pdropdown' id="pbbox">
+        <button class='pbtn'>Projects</button>
+    </div>
+</div>
+</body>
+</html>
